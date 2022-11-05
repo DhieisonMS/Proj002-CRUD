@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  app:
+    image: mcr.microsoft.com/dotnet/sdk
+    working_dir: /app
+    volumes:
+      - ./src/:/app
+    tty: true
+
+  mysql-crud:
+    image: mysql
+    ports:
+    - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345a
+      MYSQL_DATABASE: crud01
