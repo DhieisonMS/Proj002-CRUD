@@ -1,11 +1,14 @@
 version: '3.7'
 services:
-  app:
-    image: mcr.microsoft.com/dotnet/sdk
-    working_dir: /app
-    volumes:
-      - ./src/:/app
-    tty: true
+#   app:
+#     image: mcr.microsoft.com/dotnet/sdk
+#     ports:
+#     - 7040:7040
+#     working_dir: /app
+#     volumes:
+#       - ./src/:/app
+#     tty: true
+
 
   mysql-crud:
     image: mysql
