@@ -44,6 +44,6 @@
 
 dotnet-ef migrations add primeira tabela
 
-do
+dotnet-ef database update
 
 
